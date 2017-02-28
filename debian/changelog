@@ -1,3 +1,9 @@
+python-azure-mgmt-storage (0.31.0-2) pexip; urgency=low
+
+  * Fix installed packages
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 28 Feb 2017 22:39:32 +0000
+
 python-azure-mgmt-storage (0.31.0-1) pexip; urgency=low
 
   * New upstream release

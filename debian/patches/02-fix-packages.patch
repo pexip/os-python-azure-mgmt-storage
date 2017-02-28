@@ -1,0 +1,28 @@
+diff --git a/setup.py b/setup.py
+index fd4f55a..83339e9 100644
+--- a/setup.py
++++ b/setup.py
+@@ -6,7 +6,7 @@
+ # license information.
+ #--------------------------------------------------------------------------
+ 
+-from setuptools import find_packages, setup
++from setuptools import setup
+ from io import open
+ import re
+ 
+@@ -60,7 +60,13 @@ setup(
+         'License :: OSI Approved :: MIT License',
+     ],
+     zip_safe=False,
+-    packages=find_packages(),
++    packages=[
++        'azure',
++        'azure.mgmt',
++        'azure.mgmt.storage',
++        'azure.mgmt.storage.models',
++        'azure.mgmt.storage.operations',
++    ],
+     install_requires=[
+         'azure-mgmt-nspkg',
+         'azure-common>=1.1.4',
